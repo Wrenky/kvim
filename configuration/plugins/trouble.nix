@@ -6,8 +6,7 @@
     {
       mode = "n";
       key = "<leader>tt";
-      action = "<cmd>TroubleToggle<CR>";
-      #    lua = true;
+      action = "<cmd>Trouble diagnostics toggle filter.buf=0<CR>";
       options = {
         silent = true;
         desc = "Trouble Toggle";
@@ -16,34 +15,31 @@
 
     {
       mode = "n";
-      key = "<leader>tw";
-      action = "<cmd>TroubleToggle workspace_diagnostics<CR>";
-      #    lua = true;
+      key = "<leader>tl";
+      action = "<cmd>Trouble loclist toggle<CR>";
       options = {
         silent = true;
-        desc = "Workspace Diagnostics";
+        desc = "Trouble Location List";
       };
     }
 
     {
       mode = "n";
       key = "<leader>tq";
-      action = "<cmd>TroubleToggle quickfix<CR>";
-      #    lua = true;
+      action = "<cmd>Trouble qflist toggle<CR>";
       options = {
         silent = true;
-        desc = "Quickfix";
+        desc = "Trouble Quickfix";
       };
     }
 
     {
       mode = "n";
-      key = "gR";
-      action = "<cmd>TroubleToggle lsp_references<CR>";
-      #    lua = true;
+      key = "<leader>tL";
+      action = "<cmd>Trouble lsp toggle<CR>";
       options = {
         silent = true;
-        desc = "Lsp References";
+        desc = "Trouble Lsp References";
       };
     }
   ];
