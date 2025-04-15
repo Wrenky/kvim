@@ -13,7 +13,12 @@
         #shellcheck.enable = true;
       };
       formatting = {
-        shfmt.enable = true;
+        shfmt = {
+            enable = true;
+            settings = {
+                extra_args = [ "-i" "4"];
+            };
+        };
         nixpkgs_fmt.enable = true;
         goimports.enable = true;
         gofmt.enable = true;
