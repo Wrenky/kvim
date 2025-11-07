@@ -15,7 +15,9 @@
     };
     lspsaga = {
       enable = true;
-      lightbulb.enable = false;
+      settings = {
+        lightbulb.enable = false;
+      };
     };
   };
 
