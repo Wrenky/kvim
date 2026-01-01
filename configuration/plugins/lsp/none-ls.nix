@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins.none-ls = {
     enable = true;
     settings = {
@@ -14,13 +15,17 @@
       };
       formatting = {
         shfmt = {
-            enable = true;
-            settings = {
-                extra_args = [ "-i" "4"];
-            };
+          enable = true;
+          settings = {
+            extra_args = [
+              "-i"
+              "4"
+            ];
+          };
         };
         nixpkgs_fmt.enable = true;
         goimports.enable = true;
+        gleam_format.enable = true;
         gofmt.enable = true;
         # black.enable = true;
       };
