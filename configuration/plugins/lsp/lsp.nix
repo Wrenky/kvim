@@ -7,6 +7,7 @@
       enable = true;
       servers = {
         gopls.enable = true;
+        gleam.enable = true;
         nil_ls.enable = true;
         bashls.enable = true;
         ruff.enable = true;
